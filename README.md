@@ -78,7 +78,7 @@ Go to the container that was just created and we will create folders inside the 
 ![image](https://github.com/Reshmarathod/Azure-Olympics-Analysis-Data-Engineering-End-to-End-Project1/assets/146751905/ab9908a6-de40-4d6a-adb8-7dfd938c567b)
 
 
-## **Data Ingestion Process**
+## **Data Ingestion Process**:
 
 
 Now the first step with our data is to ingest the data from our github repository to the ADLS2 using Azure Data Factory and the linked Services.
@@ -90,10 +90,6 @@ We will create a Azure Data Factory resource inside the resource group.
 Once ADF is created, launch the ADF Studio. Now we need to ingest data into Azure Data Factory, to do that we will use Linked Services of Azure for each dataset.
 
 Creating required Linked Services: Two Linked Services need to be created for each dataset. These linked services will establish the connection between Azure Data Factory and diverse sources of data.
-
-Source Linked Service
-Destination Linked Service
-To create a linked service go to “Manage “ inside the ADF Studio.
 
 ![image](https://github.com/Reshmarathod/Azure-Olympics-Analysis-Data-Engineering-End-to-End-Project1/assets/146751905/efafbe71-3570-420e-a015-2622173e1d16)
 
@@ -144,7 +140,7 @@ Once the data pipeline is run, you will see the datasets added into the raw fold
 
 
 
-## **Data Transformation Process**
+## **Data Transformation Process**:
 
 After the successful ingestion of data into the Data Lake, we deploy Azure Databricks notebooks. These notebooks attach to our storage account and perform the necessary data transformations. This process involves creating an app under the App Registration Service and providing it with access control to the storage account.
 
@@ -167,7 +163,19 @@ Following the execution of transformations, we store these files back into our D
 
 <img width="649" alt="image" src="https://github.com/Reshmarathod/Azure-Olympics-Analysis-Data-Engineering-End-to-End-Project1/assets/146751905/1c35588a-199e-4447-9e99-ae87d43dd098">
 
-## **Creation of the Database using Azure Synapse Analytics**
+<img width="671" alt="image" src="https://github.com/Reshmarathod/Azure-Olympics-Analysis-Data-Engineering-End-to-End-Project1/assets/146751905/b0beec9c-d7ca-44a4-84a4-9567866e003f">
+
+<img width="622" alt="image" src="https://github.com/Reshmarathod/Azure-Olympics-Analysis-Data-Engineering-End-to-End-Project1/assets/146751905/8d8bdc84-cacc-4155-a039-ce2ccbdaa511">
+
+<img width="580" alt="image" src="https://github.com/Reshmarathod/Azure-Olympics-Analysis-Data-Engineering-End-to-End-Project1/assets/146751905/361d0836-d62c-4fa0-b782-b31e3d35d467">
+
+<img width="583" alt="image" src="https://github.com/Reshmarathod/Azure-Olympics-Analysis-Data-Engineering-End-to-End-Project1/assets/146751905/b72e877f-057e-48f5-a45c-bc67d4bd3d40">
+
+
+
+
+
+## **Creation of the Database using Azure Synapse Analytics**:
 
 Load Data from ADLS2 to Azure Synapse Analytics for Data Analysis:
 
@@ -206,7 +214,9 @@ Once the tables are created we can use SQL to perform the analytics on the data 
 
 
 
-## **Generating a report in PowerBI**
+## **Generating a report in PowerBI**:
+
+Next i created interactive dashboards using various charts and visualizations provided by PowerBI.
 
 
 ![image](https://github.com/Reshmarathod/Azure-Olympics-Analysis-Data-Engineering-End-to-End-Project1/assets/146751905/77af5976-c313-4d7d-979d-fe9bade851e6)
@@ -215,11 +225,6 @@ Once the tables are created we can use SQL to perform the analytics on the data 
 
 ![image](https://github.com/Reshmarathod/Azure-Olympics-Analysis-Data-Engineering-End-to-End-Project1/assets/146751905/57acc276-b2a7-4aeb-b683-16e1b47241cf)
 
-
-
-
-
-https://github.com/SherlockkOms/Tokyo-Olympics-Data-Analysis-Microsoft-Azure-End-to-End-Pipeline-Project/blob/main/Images/PowerBIDashboard.png
 
 
 # **Conclusion**
